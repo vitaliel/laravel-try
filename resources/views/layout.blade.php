@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>My Village</title>
-        <link rel="stylesheet" type="text/css" href="/css/app.css">
+        <link rel="stylesheet" type="text/css" href="{{ mix('/css/app.css') }}">
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -25,5 +25,7 @@
                 @yield('content')
             </div>
         </div>
+
+    <script type="text/javascript" src="{{ mix('/js/app.js') }}" />
     </body>
 </html>
