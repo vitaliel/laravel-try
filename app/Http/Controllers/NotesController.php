@@ -9,13 +9,23 @@ use Illuminate\Http\Request;
 
 class NotesController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function store(Request $request, Card $card)
     {
         $this->validate($request, [
             'body' => 'required|min:10'
         ]);
         $note = new Note($request->all());
-        $note->user_id = User::first()->id;
+        $note->user_id = Auth::id();
         $card->addNote($note);
 
         return back();

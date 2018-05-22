@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Card;
 
-class CardsController extends Controller
+class HomeController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -17,15 +16,13 @@ class CardsController extends Controller
         $this->middleware('auth');
     }
 
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
-        $cards = Card::all();
-        return view('cards.index', compact('cards'));
-    }
-
-    public function show(Card $card)
-    {
-        $card->load('notes.user');
-        return view('cards.show', compact('card'));
+        return view('home');
     }
 }
