@@ -25,8 +25,10 @@ class NotesController extends Controller
             'body' => 'required|min:10'
         ]);
         $note = new Note($request->all());
-        $note->user_id = Auth::id();
+        $note->user_id = \Auth::id();
         $card->addNote($note);
+
+        flash("Note was created succsessfully.");
 
         return back();
     }

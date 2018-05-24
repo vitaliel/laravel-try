@@ -2,8 +2,9 @@
 
 @section('content')
 
-<div class="row">
-    <div class="col-md-6 col-md-offset-3">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
 
         <h1>Card: {{ $card->title }}</h1>
 
@@ -39,6 +40,7 @@
                 @endforeach
             </ul>
         @endif
+      </div>
     </div>
 </div>
 
