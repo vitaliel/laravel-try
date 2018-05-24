@@ -44,6 +44,7 @@
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
                             <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
                         @else
+                            <li><a class="nav-link" href="/buildings">{{ __('Buildings') }}</a></li>
                             <li><a class="nav-link" href="/cards">{{ __('Cards') }}</a></li>
 
                             <li class="nav-item dropdown">

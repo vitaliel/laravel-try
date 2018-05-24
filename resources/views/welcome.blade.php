@@ -4,4 +4,4 @@
 
 <h1>Welcome!</h1>
 
-@stop
+@endsection

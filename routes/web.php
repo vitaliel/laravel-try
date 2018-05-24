@@ -13,3 +13,6 @@ Route::patch('notes/{note}', 'NotesController@update');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('buildings', 'BuildingsController@index');
+Route::get('buildings/{building}', 'BuildingsController@show');
