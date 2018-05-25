@@ -3,7 +3,7 @@
         <div class="card-header">{{ header }}</div>
 
         <div class="card-body">
-            Awesome!
+            <slot></slot>
         </div>
     </div>
 </template>
