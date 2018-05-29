@@ -22,3 +22,13 @@ CREATE DATABASE my_village_dev
     DEFAULT CHARACTER SET utf8mb4
     DEFAULT COLLATE utf8mb4_unicode_ci;
 ```
+
+Install nodejs dependencies:
+```
+npm install
+```
+
+Build js/css
+```
+npm run dev
+```
