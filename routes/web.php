@@ -12,9 +12,9 @@ Route::patch('notes/{note}', 'NotesController@update');
 
 Auth::routes();
 
-Route::get('vue', function() {
-    return view('vue_test');
-});
+// Route::get('vue', function() {
+//     return view('vue_test');
+// });
 
 Route::get('/home', 'HomeController@index')->name('home');
 
