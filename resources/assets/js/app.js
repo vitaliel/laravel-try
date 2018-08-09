@@ -16,7 +16,11 @@ window.Vue = require('vue');
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('counter', require('./components/Counter.vue'));
+import store from './store';
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    store,
+//    render: h => h()
 });
