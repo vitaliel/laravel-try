@@ -3,7 +3,7 @@
 Clone repository
 
 ```
-git clone git@gitlab.com:vitaliel/my-village.git
+git clone git@github.com:vitaliel/laravel-try.git
 ```
 
 Install deps
